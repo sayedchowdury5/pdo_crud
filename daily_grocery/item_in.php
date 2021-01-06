@@ -115,7 +115,7 @@
                             <input type="text" class="form-control" name="item_name[]" placeholder="Item Name" required>
                         </div>
                         <div class="col-12 col-sm-12 col-md col-lg mt-1">
-                            <input type="text" class="form-control" name="item_remark[]" placeholder="Remark (i.e. weight, shop name)" required>
+                            <input type="text" class="form-control" name="item_remark[]" placeholder="Remark (i.e. ingredients, quantity)" required>
                         </div>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
             });
 
             $('#add_fooditem').click(function() {
-                var add_field = '<div><hr class="border-danger"><div class="row mt-3"><div class="col-12 col-sm-12 col-md col-lg mt-1"><input type="text" class="form-control" name="item_name[]" placeholder="Item Name" required></div><div class="col-12 col-sm-12 col-md col-lg mt-1"><input type="text" class="form-control" name="item_remark[]" placeholder="Remark (i.e. weight, shop name)" required></div></div></div>';
+                var add_field = '<div><hr class="border-danger"><div class="row mt-3"><div class="col-12 col-sm-12 col-md col-lg mt-1"><input type="text" class="form-control" name="item_name[]" placeholder="Item Name" required></div><div class="col-12 col-sm-12 col-md col-lg mt-1"><input type="text" class="form-control" name="item_remark[]" placeholder="Remark (i.e. ingredients, quantity)" required></div></div></div>';
                 $('#add_moreitem').append(add_field);
             });
             $('#delete_fooditem').click(function() {
