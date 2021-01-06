@@ -1,0 +1,12 @@
+<?php
+    require_once ('connect.php');
+
+        $item_id = $_GET['id'];
+        //$alert = "Item $item_id Deleted Successfully!";
+        $sql = "DELETE FROM food_supply WHERE id = ?";
+        $prepare = $conn->prepare($sql);
+        
+        if ($prepare->execute([$item_id])) {
+            echo '<script>alert("Item '.$item_id.' Deleted Successfully!"); window.location.href="view_food_supply.php";</script>';
+        }
+?>
